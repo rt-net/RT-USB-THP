@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;RT-USB-9AXIS-00_20150608/src/Copy of mpu9150.c&apos; to &apos;bme280.c&apos;" description="Rename resource &apos;Copy of mpu9150.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Copy of mpu9150.c" name="bme280.c" stamp="1442371201028" updateReferences="true"/>
+</session>
