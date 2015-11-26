@@ -1,6 +1,6 @@
 # RT-USB-THP
 
-![Alt Text](https://github.com/taryo/RT-USB-THP/dev/web/RT-WB-TH.png)
+![image](RT-WB-TH.png)
 
 
 本リポジトリはUSB出力温湿気圧センサモジュールのサンプルプログラムおよびマニュアル
