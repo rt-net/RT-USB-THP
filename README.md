@@ -1,6 +1,6 @@
 # RT-USB-THP
 
-![image](RT-WB-TH.png)
+![image](./image/RT-WB-TH.png)
 
 
 本リポジトリはUSB出力温湿気圧センサモジュールのサンプルプログラムおよびマニュアル
