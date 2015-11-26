@@ -8,6 +8,14 @@
 ## circuit 
 USB出力温室気圧センサモジュールの回路図です.
 
+## LPCXpresso sample
+LPCXpressoとはLPCマイコン(lpc1343)の統合開発環境です.  
+<http://www.nxp-lpc.com/lpc_boards/lpcxpresso/>
+本センサモジュールに最初に書き込まれているファームウェアの
+プロジェクトです.  開発環境の構築方法およびサンプルプロジェクト
+のインポート方法についてはmanualフォルダ内のマニュアルを
+参照してください.  
+
 ## datasheet
 温室気圧センサbme280およびlpc1343マイコンのデータシートです.
 
