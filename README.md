@@ -41,14 +41,14 @@ Linux環境においてはドライバーのインストールは必要ありま
 デバイスドライバをインストールした後には本センサは仮想COMポートで認識されます.  
 以下の動画は仮想COMポートをteratermを用いて開いたときの様子です.
 
-[![](http://img.youtube.com/vi/i_fkRaMwUJE/0.jpg)](https://www.youtube.com/watch?v=i_fkRaMwUJE)
+[![](http://img.youtube.com/vi/i_fkRaMwUJE/0.jpg)](https://www.youtube.com/watch?v=i_fkRaMwUJE)   
 サムネイルをクリックで動画再生
 ### Linux環境での動作確認
 Linux環境で本センサは/dev配下のデバイスファイルとして認識されます.
 以下の動画はデバイスファイルとして認識したファイルを開いたときの様子です.
 下のサムネイル写真では/dev/ttyACM0として認識されています.
 
-[![](http://img.youtube.com/vi/0P6QNqg0ExA/0.jpg)](https://www.youtube.com/watch?v=0P6QNqg0ExA)
+[![](http://img.youtube.com/vi/0P6QNqg0ExA/0.jpg)](https://www.youtube.com/watch?v=0P6QNqg0ExA)   
 サムネイルをクリックで動画再生
 
 
