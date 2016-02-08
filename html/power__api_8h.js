@@ -1,0 +1,25 @@
+var power__api_8h =
+[
+    [ "_PWRD", "struct___p_w_r_d.html", "struct___p_w_r_d" ],
+    [ "_ROM", "struct___r_o_m.html", "struct___r_o_m" ],
+    [ "CPU_FREQ_CLOSE", "power__api_8h.html#a47ab7907d51fc6a3ba06e72a8bef13d6", null ],
+    [ "CPU_FREQ_EQU", "power__api_8h.html#a8e049285e00df8a409c293ad3a63ef98", null ],
+    [ "CPU_FREQ_GTE", "power__api_8h.html#a812135b1a38458194db1116546fa3006", null ],
+    [ "CPU_FREQ_LTE", "power__api_8h.html#a75fae5d19b6bbee3e31f8f90f3ed79bb", null ],
+    [ "MAX_CLOCK_KHZ_PARAM", "power__api_8h.html#a76b032d2b0de48177f56f7f5907dd5fd", null ],
+    [ "PARAM_CMD_CUCCESS", "power__api_8h.html#ad6c22b9dc14bcd34f7445e01aa3a98d1", null ],
+    [ "PARAM_CPU_PERFORMANCE", "power__api_8h.html#a5accebefb98a902e64ceb128ea7188d0", null ],
+    [ "PARAM_DEFAULT", "power__api_8h.html#acaad6a3b51b19e461b9cd483d409ece3", null ],
+    [ "PARAM_EFFICIENCY", "power__api_8h.html#a39f5f9ab7c53fd50443fae8208e530e4", null ],
+    [ "PARAM_INVALID_FREQ", "power__api_8h.html#a3b6dfad47a0fa1ed1c914efac666cb34", null ],
+    [ "PARAM_INVALID_MODE", "power__api_8h.html#addc23e1de361b6cc2d60d84fac556650", null ],
+    [ "PARAM_LOW_CURRENT", "power__api_8h.html#adb70cfca1c766156288105c0ee52584c", null ],
+    [ "PLL_CMD_CUCCESS", "power__api_8h.html#a2d9a3ca4e0842c3ffe062785ec6cb34c", null ],
+    [ "PLL_FREQ_NOT_FOUND", "power__api_8h.html#a4070f9901bf5689b73f11093c5d3e673", null ],
+    [ "PLL_INVALID_FREQ", "power__api_8h.html#a5fa3ef9161a7efe4b9522e9c6e0dd574", null ],
+    [ "PLL_INVALID_MODE", "power__api_8h.html#ae09215b0b37a50eb491fb1bade955ef4", null ],
+    [ "PLL_NOT_LOCKED", "power__api_8h.html#a5b1c33c10d4c966ec3250fa898694b6a", null ],
+    [ "PWRROMD_PRESENT", "power__api_8h.html#a6cdccf5a96183a30969bd765c665b6e9", null ],
+    [ "PWRD", "power__api_8h.html#a0dd216c5fb109d244f585ef2731dc39b", null ],
+    [ "ROM", "power__api_8h.html#a62a62e98e2daa64c6e3c5f320edce7be", null ]
+];

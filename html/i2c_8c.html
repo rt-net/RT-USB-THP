@@ -1,0 +1,450 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>RT-USB-THP: i2c.c ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">RT-USB-THP
+   &#160;<span id="projectnumber">0</span>
+   </div>
+   <div id="projectbrief">USB出力温湿気圧センサモジュールのサンプルプログラムに関する説明</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>大域各種</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('i2c_8c.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">関数</a> &#124;
+<a href="#var-members">変数</a>  </div>
+  <div class="headertitle">
+<div class="title">i2c.c ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_l_p_c13xx_8h_source.html">LPC13xx.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="type_8h_source.html">type.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="i2c_8h_source.html">i2c.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+i2c.c の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="i2c_8c__incl.png" border="0" usemap="#i2c_8c" alt=""/></div>
+<map name="i2c_8c" id="i2c_8c">
+<area shape="rect" id="node2" href="_l_p_c13xx_8h.html" title="LPC13xx.h" alt="" coords="138,80,225,107"/>
+<area shape="rect" id="node6" href="type_8h.html" title="type.h" alt="" coords="285,155,344,181"/>
+<area shape="rect" id="node7" href="i2c_8h.html" title="i2c.h" alt="" coords="300,80,351,107"/>
+<area shape="rect" id="node3" href="_c_m_s_i_sv1p30___l_p_c13xx_2inc_2core__cm3_8h.html" title="core_cm3.h" alt="" coords="5,155,96,181"/>
+<area shape="rect" id="node5" href="system___l_p_c13xx_8h.html" title="CMSIS Cortex&#45;M3 Device Peripheral Access Layer Header File for the NXP LPC13xx Device Series..." alt="" coords="120,155,256,181"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a420d56f594345b56efdac63fdabf71c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8c.html#a420d56f594345b56efdac63fdabf71c2">I2C_IRQHandler</a> (void)</td></tr>
+<tr class="separator:a420d56f594345b56efdac63fdabf71c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c87427cfa767315491db0a0c005ec59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="type_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8c.html#a7c87427cfa767315491db0a0c005ec59">I2CStart</a> (void)</td></tr>
+<tr class="separator:a7c87427cfa767315491db0a0c005ec59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b1d12f3a83330eda885db24a701e1b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="type_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8c.html#a7b1d12f3a83330eda885db24a701e1b5">I2CStop</a> (void)</td></tr>
+<tr class="separator:a7b1d12f3a83330eda885db24a701e1b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a279d004d45293dff5260643be80c1319"><td class="memItemLeft" align="right" valign="top"><a class="el" href="type_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8c.html#a279d004d45293dff5260643be80c1319">I2CInit</a> (<a class="el" href="type_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> I2cMode)</td></tr>
+<tr class="separator:a279d004d45293dff5260643be80c1319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0036f04c55d6d2118405ca42632bdbd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="type_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8c.html#a0036f04c55d6d2118405ca42632bdbd4">I2CEngine</a> (void)</td></tr>
+<tr class="separator:a0036f04c55d6d2118405ca42632bdbd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+変数</h2></td></tr>
+<tr class="memitem:af2d015836f3e51c6e119304a6940d5ee"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="type_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8c.html#af2d015836f3e51c6e119304a6940d5ee">I2CMasterState</a> = <a class="el" href="i2c_8h.html#a9fad2fbb677672fc4e969be5586753ba">I2C_IDLE</a></td></tr>
+<tr class="separator:af2d015836f3e51c6e119304a6940d5ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add31ac27527e6965696ed348869cdeb6"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="type_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8c.html#add31ac27527e6965696ed348869cdeb6">I2CSlaveState</a> = <a class="el" href="i2c_8h.html#a9fad2fbb677672fc4e969be5586753ba">I2C_IDLE</a></td></tr>
+<tr class="separator:add31ac27527e6965696ed348869cdeb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a030cffeeebfe8d5e5a3d2849566ed47d"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="type_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8c.html#a030cffeeebfe8d5e5a3d2849566ed47d">I2CMode</a></td></tr>
+<tr class="separator:a030cffeeebfe8d5e5a3d2849566ed47d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a766e99196841c51b7560453d06423b6a"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="type_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8c.html#a766e99196841c51b7560453d06423b6a">I2CMasterBuffer</a> [<a class="el" href="uart_8h.html#aeca034f67218340ecb2261a22c2f3dcd">BUFSIZE</a>]</td></tr>
+<tr class="separator:a766e99196841c51b7560453d06423b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d36144f2477482e231da2b8a14b6380"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="type_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8c.html#a8d36144f2477482e231da2b8a14b6380">I2CSlaveBuffer</a> [<a class="el" href="uart_8h.html#aeca034f67218340ecb2261a22c2f3dcd">BUFSIZE</a>]</td></tr>
+<tr class="separator:a8d36144f2477482e231da2b8a14b6380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77f3ee188f6a73c978cc82052307ecfd"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="type_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8c.html#a77f3ee188f6a73c978cc82052307ecfd">I2CCount</a> = 0</td></tr>
+<tr class="separator:a77f3ee188f6a73c978cc82052307ecfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99aaa16c53f267f8862d444f522d763c"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="type_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8c.html#a99aaa16c53f267f8862d444f522d763c">I2CReadLength</a></td></tr>
+<tr class="separator:a99aaa16c53f267f8862d444f522d763c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6227a3e6005b75f07040af82dc4b8a6e"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="type_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8c.html#a6227a3e6005b75f07040af82dc4b8a6e">I2CWriteLength</a></td></tr>
+<tr class="separator:a6227a3e6005b75f07040af82dc4b8a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d58180aff42f279cad5adae99aa20d1"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="type_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8c.html#a5d58180aff42f279cad5adae99aa20d1">RdIndex</a> = 0</td></tr>
+<tr class="separator:a5d58180aff42f279cad5adae99aa20d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf833cdc9b116a31d852fb619bb2200c"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="type_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="i2c_8c.html#acf833cdc9b116a31d852fb619bb2200c">WrIndex</a> = 0</td></tr>
+<tr class="separator:acf833cdc9b116a31d852fb619bb2200c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">関数詳解</h2>
+<a class="anchor" id="a420d56f594345b56efdac63fdabf71c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I2C_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0036f04c55d6d2118405ca42632bdbd4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="type_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> I2CEngine </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="i2c_8c_a0036f04c55d6d2118405ca42632bdbd4_cgraph.png" border="0" usemap="#i2c_8c_a0036f04c55d6d2118405ca42632bdbd4_cgraph" alt=""/></div>
+<map name="i2c_8c_a0036f04c55d6d2118405ca42632bdbd4_cgraph" id="i2c_8c_a0036f04c55d6d2118405ca42632bdbd4_cgraph">
+<area shape="rect" id="node2" href="i2c_8c.html#a7c87427cfa767315491db0a0c005ec59" title="I2CStart" alt="" coords="135,5,204,32"/>
+<area shape="rect" id="node3" href="i2c_8c.html#a7b1d12f3a83330eda885db24a701e1b5" title="I2CStop" alt="" coords="135,56,203,83"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="i2c_8c_a0036f04c55d6d2118405ca42632bdbd4_icgraph.png" border="0" usemap="#i2c_8c_a0036f04c55d6d2118405ca42632bdbd4_icgraph" alt=""/></div>
+<map name="i2c_8c_a0036f04c55d6d2118405ca42632bdbd4_icgraph" id="i2c_8c_a0036f04c55d6d2118405ca42632bdbd4_icgraph">
+<area shape="rect" id="node2" href="bme280_8c.html#aab2d0c7ae27504fd3abdca793bc20307" title="bme280_init" alt="" coords="148,5,240,32"/>
+<area shape="rect" id="node4" href="bme280_8c.html#a4270c349bb9868b70c6a46c8d5c0bc49" title="get_rawdata" alt="" coords="148,107,240,133"/>
+<area shape="rect" id="node6" href="bme280_8c.html#af752df8e5eb19ac83f8e631cbf6c8841" title="get_trimdata" alt="" coords="147,56,241,83"/>
+<area shape="rect" id="node7" href="bme280_8c.html#a62fe1672d6460d5a69a1b367f05776fa" title="whoAmIBME280" alt="" coords="135,157,253,184"/>
+<area shape="rect" id="node3" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="357,31,408,57"/>
+<area shape="rect" id="node5" href="_main_function_8c.html#a722d97fdabdf6a349b0ad02c82da1d23" title="TIMER32_1_IRQHandler" alt="" coords="301,107,464,133"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a279d004d45293dff5260643be80c1319"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="type_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> I2CInit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="type_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>I2cMode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="i2c_8c_a279d004d45293dff5260643be80c1319_icgraph.png" border="0" usemap="#i2c_8c_a279d004d45293dff5260643be80c1319_icgraph" alt=""/></div>
+<map name="i2c_8c_a279d004d45293dff5260643be80c1319_icgraph" id="i2c_8c_a279d004d45293dff5260643be80c1319_icgraph">
+<area shape="rect" id="node2" href="main_8c.html#a2858154e2009b0e6e616f313177762bc" title="init" alt="" coords="112,5,151,32"/>
+<area shape="rect" id="node3" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="199,5,249,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7c87427cfa767315491db0a0c005ec59"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="type_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> I2CStart </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="i2c_8c_a7c87427cfa767315491db0a0c005ec59_icgraph.png" border="0" usemap="#i2c_8c_a7c87427cfa767315491db0a0c005ec59_icgraph" alt=""/></div>
+<map name="i2c_8c_a7c87427cfa767315491db0a0c005ec59_icgraph" id="i2c_8c_a7c87427cfa767315491db0a0c005ec59_icgraph">
+<area shape="rect" id="node2" href="i2c_8c.html#a0036f04c55d6d2118405ca42632bdbd4" title="I2CEngine" alt="" coords="123,81,204,108"/>
+<area shape="rect" id="node3" href="bme280_8c.html#aab2d0c7ae27504fd3abdca793bc20307" title="bme280_init" alt="" coords="265,5,357,32"/>
+<area shape="rect" id="node5" href="bme280_8c.html#a4270c349bb9868b70c6a46c8d5c0bc49" title="get_rawdata" alt="" coords="265,107,357,133"/>
+<area shape="rect" id="node7" href="bme280_8c.html#af752df8e5eb19ac83f8e631cbf6c8841" title="get_trimdata" alt="" coords="264,56,359,83"/>
+<area shape="rect" id="node8" href="bme280_8c.html#a62fe1672d6460d5a69a1b367f05776fa" title="whoAmIBME280" alt="" coords="252,157,371,184"/>
+<area shape="rect" id="node4" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="475,31,525,57"/>
+<area shape="rect" id="node6" href="_main_function_8c.html#a722d97fdabdf6a349b0ad02c82da1d23" title="TIMER32_1_IRQHandler" alt="" coords="419,107,581,133"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7b1d12f3a83330eda885db24a701e1b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="type_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> I2CStop </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="i2c_8c_a7b1d12f3a83330eda885db24a701e1b5_icgraph.png" border="0" usemap="#i2c_8c_a7b1d12f3a83330eda885db24a701e1b5_icgraph" alt=""/></div>
+<map name="i2c_8c_a7b1d12f3a83330eda885db24a701e1b5_icgraph" id="i2c_8c_a7b1d12f3a83330eda885db24a701e1b5_icgraph">
+<area shape="rect" id="node2" href="i2c_8c.html#a0036f04c55d6d2118405ca42632bdbd4" title="I2CEngine" alt="" coords="121,81,203,108"/>
+<area shape="rect" id="node3" href="bme280_8c.html#aab2d0c7ae27504fd3abdca793bc20307" title="bme280_init" alt="" coords="264,5,356,32"/>
+<area shape="rect" id="node5" href="bme280_8c.html#a4270c349bb9868b70c6a46c8d5c0bc49" title="get_rawdata" alt="" coords="264,107,356,133"/>
+<area shape="rect" id="node7" href="bme280_8c.html#af752df8e5eb19ac83f8e631cbf6c8841" title="get_trimdata" alt="" coords="263,56,357,83"/>
+<area shape="rect" id="node8" href="bme280_8c.html#a62fe1672d6460d5a69a1b367f05776fa" title="whoAmIBME280" alt="" coords="251,157,369,184"/>
+<area shape="rect" id="node4" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="473,31,524,57"/>
+<area shape="rect" id="node6" href="_main_function_8c.html#a722d97fdabdf6a349b0ad02c82da1d23" title="TIMER32_1_IRQHandler" alt="" coords="417,107,580,133"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">変数詳解</h2>
+<a class="anchor" id="a77f3ee188f6a73c978cc82052307ecfd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile <a class="el" href="type_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> I2CCount = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a766e99196841c51b7560453d06423b6a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile <a class="el" href="type_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> I2CMasterBuffer[<a class="el" href="uart_8h.html#aeca034f67218340ecb2261a22c2f3dcd">BUFSIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af2d015836f3e51c6e119304a6940d5ee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile <a class="el" href="type_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> I2CMasterState = <a class="el" href="i2c_8h.html#a9fad2fbb677672fc4e969be5586753ba">I2C_IDLE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a030cffeeebfe8d5e5a3d2849566ed47d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile <a class="el" href="type_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> I2CMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a99aaa16c53f267f8862d444f522d763c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile <a class="el" href="type_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> I2CReadLength</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8d36144f2477482e231da2b8a14b6380"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile <a class="el" href="type_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> I2CSlaveBuffer[<a class="el" href="uart_8h.html#aeca034f67218340ecb2261a22c2f3dcd">BUFSIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="add31ac27527e6965696ed348869cdeb6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile <a class="el" href="type_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> I2CSlaveState = <a class="el" href="i2c_8h.html#a9fad2fbb677672fc4e969be5586753ba">I2C_IDLE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6227a3e6005b75f07040af82dc4b8a6e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile <a class="el" href="type_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> I2CWriteLength</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5d58180aff42f279cad5adae99aa20d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile <a class="el" href="type_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> RdIndex = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acf833cdc9b116a31d852fb619bb2200c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile <a class="el" href="type_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> WrIndex = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_a5be7bbed3ff2f129951759fe96bf5d5.html">workspace</a></li><li class="navelem"><a class="el" href="dir_e849b43f2720135ff09dee0ba18ac893.html">RT-USB-THP-sample</a></li><li class="navelem"><a class="el" href="dir_e12c316076f616ada5cf0ac3c0e63a85.html">src</a></li><li class="navelem"><a class="el" href="dir_0cfd99ed1ee17095773b748971f7a5c6.html">PERIPHERAL</a></li><li class="navelem"><a class="el" href="i2c_8c.html">i2c.c</a></li>
+    <li class="footer">構築:
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

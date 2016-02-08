@@ -1,0 +1,11 @@
+<map id="usbhw.c" name="usbhw.c">
+<area shape="rect" id="node2" href="$_l_p_c13xx_8h.html" title="LPC13xx.h" alt="" coords="75,80,162,107"/>
+<area shape="rect" id="node6" href="$usb_8h.html" title="usb.h" alt="" coords="186,80,241,107"/>
+<area shape="rect" id="node7" href="$usbcfg_8h.html" title="usbcfg.h" alt="" coords="265,80,335,107"/>
+<area shape="rect" id="node8" href="$usbreg_8h.html" title="usbreg.h" alt="" coords="360,80,432,107"/>
+<area shape="rect" id="node9" href="$usbhw_8h.html" title="usbhw.h" alt="" coords="457,80,527,107"/>
+<area shape="rect" id="node10" href="$usbcore_8h.html" title="usbcore.h" alt="" coords="551,80,630,107"/>
+<area shape="rect" id="node11" href="$usbuser_8h.html" title="usbuser.h" alt="" coords="654,80,733,107"/>
+<area shape="rect" id="node3" href="$_c_m_s_i_sv1p30___l_p_c13xx_2inc_2core__cm3_8h.html" title="core_cm3.h" alt="" coords="5,155,96,181"/>
+<area shape="rect" id="node5" href="$system___l_p_c13xx_8h.html" title="CMSIS Cortex&#45;M3 Device Peripheral Access Layer Header File for the NXP LPC13xx Device Series..." alt="" coords="120,155,256,181"/>
+</map>

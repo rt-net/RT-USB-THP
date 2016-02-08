@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['p_5fep',['P_EP',['../usbuser_8c.html#af6bed0886f2615fdcea8a79c90cfb092',1,'usbuser.c']]],
+  ['param_5fcmd_5fcuccess',['PARAM_CMD_CUCCESS',['../power__api_8h.html#ad6c22b9dc14bcd34f7445e01aa3a98d1',1,'power_api.h']]],
+  ['param_5fcpu_5fperformance',['PARAM_CPU_PERFORMANCE',['../power__api_8h.html#a5accebefb98a902e64ceb128ea7188d0',1,'power_api.h']]],
+  ['param_5fdefault',['PARAM_DEFAULT',['../power__api_8h.html#acaad6a3b51b19e461b9cd483d409ece3',1,'power_api.h']]],
+  ['param_5fefficiency',['PARAM_EFFICIENCY',['../power__api_8h.html#a39f5f9ab7c53fd50443fae8208e530e4',1,'power_api.h']]],
+  ['param_5finvalid_5ffreq',['PARAM_INVALID_FREQ',['../power__api_8h.html#a3b6dfad47a0fa1ed1c914efac666cb34',1,'power_api.h']]],
+  ['param_5finvalid_5fmode',['PARAM_INVALID_MODE',['../power__api_8h.html#addc23e1de361b6cc2d60d84fac556650',1,'power_api.h']]],
+  ['param_5flow_5fcurrent',['PARAM_LOW_CURRENT',['../power__api_8h.html#adb70cfca1c766156288105c0ee52584c',1,'power_api.h']]],
+  ['pcf8594_5faddr',['PCF8594_ADDR',['../i2c_8h.html#aaba6ae55840e1344ff7c91c22c300fa7',1,'i2c.h']]],
+  ['pkt_5fdv',['PKT_DV',['../usbreg_8h.html#a0be0ec7ef9b6461def096d38a6bb5dc1',1,'usbreg.h']]],
+  ['pkt_5flngth_5fmask',['PKT_LNGTH_MASK',['../usbreg_8h.html#a7fb06bbe3370f59d8ab6a744d431f1f6',1,'usbreg.h']]],
+  ['pkt_5frdy',['PKT_RDY',['../usbreg_8h.html#ab6390abfb762b0c8a5c5f14e535a8931',1,'usbreg.h']]],
+  ['pll_5fcmd_5fcuccess',['PLL_CMD_CUCCESS',['../power__api_8h.html#a2d9a3ca4e0842c3ffe062785ec6cb34c',1,'power_api.h']]],
+  ['pll_5ffreq_5fnot_5ffound',['PLL_FREQ_NOT_FOUND',['../power__api_8h.html#a4070f9901bf5689b73f11093c5d3e673',1,'power_api.h']]],
+  ['pll_5finvalid_5ffreq',['PLL_INVALID_FREQ',['../power__api_8h.html#a5fa3ef9161a7efe4b9522e9c6e0dd574',1,'power_api.h']]],
+  ['pll_5finvalid_5fmode',['PLL_INVALID_MODE',['../power__api_8h.html#ae09215b0b37a50eb491fb1bade955ef4',1,'power_api.h']]],
+  ['pll_5fnot_5flocked',['PLL_NOT_LOCKED',['../power__api_8h.html#a5b1c33c10d4c966ec3250fa898694b6a',1,'power_api.h']]],
+  ['pwrromd_5fpresent',['PWRROMD_PRESENT',['../power__api_8h.html#a6cdccf5a96183a30969bd765c665b6e9',1,'power_api.h']]]
+];

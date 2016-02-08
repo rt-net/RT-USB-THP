@@ -1,0 +1,7 @@
+<map id="wait1msec" name="wait1msec">
+<area shape="rect" id="node2" href="$bme280_8c.html#aab2d0c7ae27504fd3abdca793bc20307" title="bme280_init" alt="" coords="147,5,239,32"/>
+<area shape="rect" id="node4" href="$bme280_8c.html#af752df8e5eb19ac83f8e631cbf6c8841" title="get_trimdata" alt="" coords="146,56,241,83"/>
+<area shape="rect" id="node5" href="$main_8c.html#a2858154e2009b0e6e616f313177762bc" title="init" alt="" coords="174,107,213,133"/>
+<area shape="rect" id="node6" href="$usb_transmission_8c.html#a00ae3d2d42d3c1d67f8779c026b36ec9" title="tryUSBConnect" alt="" coords="137,157,249,184"/>
+<area shape="rect" id="node3" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="297,81,348,108"/>
+</map>

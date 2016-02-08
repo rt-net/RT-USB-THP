@@ -1,0 +1,1125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>RT-USB-THP: LPC13xx.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">RT-USB-THP
+   &#160;<span id="projectnumber">0</span>
+   </div>
+   <div id="projectbrief">USB出力温湿気圧センサモジュールのサンプルプログラムに関する説明</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>大域各種</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_l_p_c13xx_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">データ構造</a> &#124;
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#typedef-members">型定義</a> &#124;
+<a href="#enum-members">列挙型</a>  </div>
+  <div class="headertitle">
+<div class="title">LPC13xx.h ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_c_m_s_i_sv1p30___l_p_c13xx_2inc_2core__cm3_8h_source.html">core_cm3.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="system___l_p_c13xx_8h_source.html">system_LPC13xx.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+LPC13xx.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_l_p_c13xx_8h__incl.png" border="0" usemap="#_l_p_c13xx_8h" alt=""/></div>
+<map name="_l_p_c13xx_8h" id="_l_p_c13xx_8h">
+<area shape="rect" id="node2" href="_c_m_s_i_sv1p30___l_p_c13xx_2inc_2core__cm3_8h.html" title="core_cm3.h" alt="" coords="5,80,96,107"/>
+<area shape="rect" id="node4" href="system___l_p_c13xx_8h.html" title="CMSIS Cortex&#45;M3 Device Peripheral Access Layer Header File for the NXP LPC13xx Device Series..." alt="" coords="120,80,256,107"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_l_p_c13xx_8h__dep__incl.png" border="0" usemap="#_l_p_c13xx_8hdep" alt=""/></div>
+<map name="_l_p_c13xx_8hdep" id="_l_p_c13xx_8hdep">
+<area shape="rect" id="node2" href="system___l_p_c13xx_8c.html" title="CMSIS Cortex&#45;M3 Device Peripheral Access Layer Source File for the NXP LPC13xx Device Series..." alt="" coords="5,80,141,107"/>
+<area shape="rect" id="node3" href="main_8c.html" title="温湿気圧センサのサンプルプログラム &#160;" alt="" coords="165,80,227,107"/>
+<area shape="rect" id="node4" href="_main_function_8c.html" title="データの送信を行う &#160;10msec毎に割り込み関数で処理を実行 " alt="" coords="251,80,362,107"/>
+<area shape="rect" id="node5" href="_user_interface_8c.html" title="LEDの点滅等の実装 &#160;&#160;" alt="" coords="387,80,496,107"/>
+<area shape="rect" id="node6" href="serial_8c.html" title="serial.c" alt="" coords="520,80,584,107"/>
+<area shape="rect" id="node7" href="debug_8c.html" title="debug.c" alt="" coords="609,80,677,107"/>
+<area shape="rect" id="node8" href="i2c_8c.html" title="i2c.c" alt="" coords="701,80,752,107"/>
+<area shape="rect" id="node9" href="io_8c.html" title="io.c" alt="" coords="776,80,819,107"/>
+<area shape="rect" id="node10" href="_system_tick_timer_8c.html" title="SystemTickTimer.c" alt="" coords="843,80,978,107"/>
+<area shape="rect" id="node11" href="timer_8c.html" title="timer.c" alt="" coords="1002,80,1065,107"/>
+<area shape="rect" id="node12" href="uart_8c.html" title="uart.c" alt="" coords="1089,80,1143,107"/>
+<area shape="rect" id="node13" href="usb_transmission_8c.html" title="usbTransmission.c" alt="" coords="1168,80,1299,107"/>
+<area shape="rect" id="node14" href="usbhw_8c.html" title="usbhw.c" alt="" coords="1323,80,1394,107"/>
+</map>
+</div>
+</div>
+<p><a href="_l_p_c13xx_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+データ構造</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_p_c___s_y_s_c_o_n___type_def.html">LPC_SYSCON_TypeDef</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_p_c___i_o_c_o_n___type_def.html">LPC_IOCON_TypeDef</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_p_c___p_m_u___type_def.html">LPC_PMU_TypeDef</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_p_c___g_p_i_o___type_def.html">LPC_GPIO_TypeDef</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_p_c___t_m_r___type_def.html">LPC_TMR_TypeDef</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_p_c___u_a_r_t___type_def.html">LPC_UART_TypeDef</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_p_c___s_s_p___type_def.html">LPC_SSP_TypeDef</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_p_c___i2_c___type_def.html">LPC_I2C_TypeDef</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_p_c___w_d_t___type_def.html">LPC_WDT_TypeDef</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_p_c___a_d_c___type_def.html">LPC_ADC_TypeDef</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_p_c___u_s_b___type_def.html">LPC_USB_TypeDef</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a4127d1b31aaf336fab3d7329d117f448"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a4127d1b31aaf336fab3d7329d117f448">__MPU_PRESENT</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a4127d1b31aaf336fab3d7329d117f448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3fe3587d5100c787e02102ce3944460"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#ae3fe3587d5100c787e02102ce3944460">__NVIC_PRIO_BITS</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:ae3fe3587d5100c787e02102ce3944460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab58771b4ec03f9bdddc84770f7c95c68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#ab58771b4ec03f9bdddc84770f7c95c68">__Vendor_SysTickConfig</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ab58771b4ec03f9bdddc84770f7c95c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d7417b6cd6c6975fa03de03920d27e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a7d7417b6cd6c6975fa03de03920d27e8">LPC_FLASH_BASE</a>&#160;&#160;&#160;(0x00000000UL)</td></tr>
+<tr class="separator:a7d7417b6cd6c6975fa03de03920d27e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9782814ad6434f200b65440d2ac01c2a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a9782814ad6434f200b65440d2ac01c2a">LPC_RAM_BASE</a>&#160;&#160;&#160;(0x10000000UL)</td></tr>
+<tr class="separator:a9782814ad6434f200b65440d2ac01c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55cab996c3594a0f4cc459ec8e10daea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a>&#160;&#160;&#160;(0x40000000UL)</td></tr>
+<tr class="separator:a55cab996c3594a0f4cc459ec8e10daea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e0d25ffe3428ed27f963e83089046a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a8e0d25ffe3428ed27f963e83089046a8">LPC_AHB_BASE</a>&#160;&#160;&#160;(0x50000000UL)</td></tr>
+<tr class="separator:a8e0d25ffe3428ed27f963e83089046a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e53652929424015ade23fe30e1d022b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a9e53652929424015ade23fe30e1d022b">LPC_I2C_BASE</a>&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x00000)</td></tr>
+<tr class="separator:a9e53652929424015ade23fe30e1d022b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02a30b0be4672972c3af9e5aebdcfea1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a02a30b0be4672972c3af9e5aebdcfea1">LPC_WDT_BASE</a>&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x04000)</td></tr>
+<tr class="separator:a02a30b0be4672972c3af9e5aebdcfea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50ba023c2b0046a5be8b1b236effeb35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a50ba023c2b0046a5be8b1b236effeb35">LPC_UART_BASE</a>&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x08000)</td></tr>
+<tr class="separator:a50ba023c2b0046a5be8b1b236effeb35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a663c7a2d9c286efce1fd9c90c0068dac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a663c7a2d9c286efce1fd9c90c0068dac">LPC_CT16B0_BASE</a>&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x0C000)</td></tr>
+<tr class="separator:a663c7a2d9c286efce1fd9c90c0068dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f33f849b010785defa0105cf6eb87f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a5f33f849b010785defa0105cf6eb87f1">LPC_CT16B1_BASE</a>&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x10000)</td></tr>
+<tr class="separator:a5f33f849b010785defa0105cf6eb87f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10dcc3ac224bf132010cb6bc6fc7d9c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a10dcc3ac224bf132010cb6bc6fc7d9c9">LPC_CT32B0_BASE</a>&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x14000)</td></tr>
+<tr class="separator:a10dcc3ac224bf132010cb6bc6fc7d9c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70f807832b5a2afb17265d22fed6160d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a70f807832b5a2afb17265d22fed6160d">LPC_CT32B1_BASE</a>&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x18000)</td></tr>
+<tr class="separator:a70f807832b5a2afb17265d22fed6160d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2396e0d0c565e4c1c3b2fc593bd6c37f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a2396e0d0c565e4c1c3b2fc593bd6c37f">LPC_ADC_BASE</a>&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x1C000)</td></tr>
+<tr class="separator:a2396e0d0c565e4c1c3b2fc593bd6c37f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa619008881e9f76dc31131313eff1b79"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#aa619008881e9f76dc31131313eff1b79">LPC_USB_BASE</a>&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x20000)</td></tr>
+<tr class="separator:aa619008881e9f76dc31131313eff1b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a865bed8ad61e9e273439ad1349a46d68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a865bed8ad61e9e273439ad1349a46d68">LPC_PMU_BASE</a>&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x38000)</td></tr>
+<tr class="separator:a865bed8ad61e9e273439ad1349a46d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b3767362481aea8871b1353c163c912"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a6b3767362481aea8871b1353c163c912">LPC_SSP_BASE</a>&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x40000)</td></tr>
+<tr class="separator:a6b3767362481aea8871b1353c163c912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53fb1af80b541545988f2a966681abfd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a53fb1af80b541545988f2a966681abfd">LPC_SSP0_BASE</a>&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x40000)</td></tr>
+<tr class="separator:a53fb1af80b541545988f2a966681abfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae48aea115d5924805263d7a15402d4fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#ae48aea115d5924805263d7a15402d4fa">LPC_IOCON_BASE</a>&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x44000)</td></tr>
+<tr class="separator:ae48aea115d5924805263d7a15402d4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a976cd83a81fd89a472221e68f0c0fbff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a976cd83a81fd89a472221e68f0c0fbff">LPC_SYSCON_BASE</a>&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x48000)</td></tr>
+<tr class="separator:a976cd83a81fd89a472221e68f0c0fbff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05d118997f53f596d3a087f8b91a1969"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a05d118997f53f596d3a087f8b91a1969">LPC_SSP1_BASE</a>&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x58000)</td></tr>
+<tr class="separator:a05d118997f53f596d3a087f8b91a1969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5feb4a6692784a25eaed627661bd8f36"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a5feb4a6692784a25eaed627661bd8f36">LPC_GPIO_BASE</a>&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a8e0d25ffe3428ed27f963e83089046a8">LPC_AHB_BASE</a>  + 0x00000)</td></tr>
+<tr class="separator:a5feb4a6692784a25eaed627661bd8f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09e0e964ea1abf3b991772df2aa52405"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a09e0e964ea1abf3b991772df2aa52405">LPC_GPIO0_BASE</a>&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a8e0d25ffe3428ed27f963e83089046a8">LPC_AHB_BASE</a>  + 0x00000)</td></tr>
+<tr class="separator:a09e0e964ea1abf3b991772df2aa52405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fb0536853721a3073bd69d94d0b7ec2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a9fb0536853721a3073bd69d94d0b7ec2">LPC_GPIO1_BASE</a>&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a8e0d25ffe3428ed27f963e83089046a8">LPC_AHB_BASE</a>  + 0x10000)</td></tr>
+<tr class="separator:a9fb0536853721a3073bd69d94d0b7ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5524b2d728167194033ec7a1841a36b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#ae5524b2d728167194033ec7a1841a36b">LPC_GPIO2_BASE</a>&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a8e0d25ffe3428ed27f963e83089046a8">LPC_AHB_BASE</a>  + 0x20000)</td></tr>
+<tr class="separator:ae5524b2d728167194033ec7a1841a36b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56c68c5326b521b3278a35f4d81369a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a56c68c5326b521b3278a35f4d81369a9">LPC_GPIO3_BASE</a>&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a8e0d25ffe3428ed27f963e83089046a8">LPC_AHB_BASE</a>  + 0x30000)</td></tr>
+<tr class="separator:a56c68c5326b521b3278a35f4d81369a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70a2faf2e119737f0e660984564d4907"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a70a2faf2e119737f0e660984564d4907">LPC_I2C</a>&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___i2_c___type_def.html">LPC_I2C_TypeDef</a>    *) <a class="el" href="_l_p_c13xx_8h.html#a9e53652929424015ade23fe30e1d022b">LPC_I2C_BASE</a>   )</td></tr>
+<tr class="separator:a70a2faf2e119737f0e660984564d4907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d68cf0829652bd8c1f837c697653c5f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a7d68cf0829652bd8c1f837c697653c5f">LPC_WDT</a>&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___w_d_t___type_def.html">LPC_WDT_TypeDef</a>    *) <a class="el" href="_l_p_c13xx_8h.html#a02a30b0be4672972c3af9e5aebdcfea1">LPC_WDT_BASE</a>   )</td></tr>
+<tr class="separator:a7d68cf0829652bd8c1f837c697653c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31a69c06776f4a82569d7ed7e91bd45c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a31a69c06776f4a82569d7ed7e91bd45c">LPC_UART</a>&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___u_a_r_t___type_def.html">LPC_UART_TypeDef</a>   *) <a class="el" href="_l_p_c13xx_8h.html#a50ba023c2b0046a5be8b1b236effeb35">LPC_UART_BASE</a>  )</td></tr>
+<tr class="separator:a31a69c06776f4a82569d7ed7e91bd45c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3e75d39e502088028bfe901b28f6471"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#ae3e75d39e502088028bfe901b28f6471">LPC_TMR16B0</a>&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___t_m_r___type_def.html">LPC_TMR_TypeDef</a>    *) <a class="el" href="_l_p_c13xx_8h.html#a663c7a2d9c286efce1fd9c90c0068dac">LPC_CT16B0_BASE</a>)</td></tr>
+<tr class="separator:ae3e75d39e502088028bfe901b28f6471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad82d36f91fa86aad5e3d57f5543e4cf6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#ad82d36f91fa86aad5e3d57f5543e4cf6">LPC_TMR16B1</a>&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___t_m_r___type_def.html">LPC_TMR_TypeDef</a>    *) <a class="el" href="_l_p_c13xx_8h.html#a5f33f849b010785defa0105cf6eb87f1">LPC_CT16B1_BASE</a>)</td></tr>
+<tr class="separator:ad82d36f91fa86aad5e3d57f5543e4cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59694d96a23b3e6de134dc5f34ad61e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a59694d96a23b3e6de134dc5f34ad61e8">LPC_TMR32B0</a>&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___t_m_r___type_def.html">LPC_TMR_TypeDef</a>    *) <a class="el" href="_l_p_c13xx_8h.html#a10dcc3ac224bf132010cb6bc6fc7d9c9">LPC_CT32B0_BASE</a>)</td></tr>
+<tr class="separator:a59694d96a23b3e6de134dc5f34ad61e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5cca8bad611399aad1da65cfafcbe2e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#ab5cca8bad611399aad1da65cfafcbe2e">LPC_TMR32B1</a>&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___t_m_r___type_def.html">LPC_TMR_TypeDef</a>    *) <a class="el" href="_l_p_c13xx_8h.html#a70f807832b5a2afb17265d22fed6160d">LPC_CT32B1_BASE</a>)</td></tr>
+<tr class="separator:ab5cca8bad611399aad1da65cfafcbe2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6eaf639d3a1eec83583a9e11ab7336f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#ab6eaf639d3a1eec83583a9e11ab7336f">LPC_ADC</a>&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___a_d_c___type_def.html">LPC_ADC_TypeDef</a>    *) <a class="el" href="_l_p_c13xx_8h.html#a2396e0d0c565e4c1c3b2fc593bd6c37f">LPC_ADC_BASE</a>   )</td></tr>
+<tr class="separator:ab6eaf639d3a1eec83583a9e11ab7336f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d540cc313db00679c10f9ac1961b06a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a9d540cc313db00679c10f9ac1961b06a">LPC_PMU</a>&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___p_m_u___type_def.html">LPC_PMU_TypeDef</a>    *) <a class="el" href="_l_p_c13xx_8h.html#a865bed8ad61e9e273439ad1349a46d68">LPC_PMU_BASE</a>   )</td></tr>
+<tr class="separator:a9d540cc313db00679c10f9ac1961b06a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e1177fbcbb4d87f0a2391e59042a5fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a3e1177fbcbb4d87f0a2391e59042a5fc">LPC_SSP</a>&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___s_s_p___type_def.html">LPC_SSP_TypeDef</a>    *) <a class="el" href="_l_p_c13xx_8h.html#a6b3767362481aea8871b1353c163c912">LPC_SSP_BASE</a>   )</td></tr>
+<tr class="separator:a3e1177fbcbb4d87f0a2391e59042a5fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac213e0325a8e8a972bd2e0dd6ccf353c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#ac213e0325a8e8a972bd2e0dd6ccf353c">LPC_SSP0</a>&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___s_s_p___type_def.html">LPC_SSP_TypeDef</a>    *) <a class="el" href="_l_p_c13xx_8h.html#a53fb1af80b541545988f2a966681abfd">LPC_SSP0_BASE</a>  )</td></tr>
+<tr class="separator:ac213e0325a8e8a972bd2e0dd6ccf353c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09c4610ada1d9aa18913963cbd1a6e52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a09c4610ada1d9aa18913963cbd1a6e52">LPC_SSP1</a>&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___s_s_p___type_def.html">LPC_SSP_TypeDef</a>    *) <a class="el" href="_l_p_c13xx_8h.html#a05d118997f53f596d3a087f8b91a1969">LPC_SSP1_BASE</a>  )</td></tr>
+<tr class="separator:a09c4610ada1d9aa18913963cbd1a6e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabc651799ba17b0dd4a0114c8d48a145"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#aabc651799ba17b0dd4a0114c8d48a145">LPC_IOCON</a>&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___i_o_c_o_n___type_def.html">LPC_IOCON_TypeDef</a>  *) <a class="el" href="_l_p_c13xx_8h.html#ae48aea115d5924805263d7a15402d4fa">LPC_IOCON_BASE</a> )</td></tr>
+<tr class="separator:aabc651799ba17b0dd4a0114c8d48a145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe45c10a979fe812e3d9ecd72fe33a2f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#abe45c10a979fe812e3d9ecd72fe33a2f">LPC_SYSCON</a>&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___s_y_s_c_o_n___type_def.html">LPC_SYSCON_TypeDef</a> *) <a class="el" href="_l_p_c13xx_8h.html#a976cd83a81fd89a472221e68f0c0fbff">LPC_SYSCON_BASE</a>)</td></tr>
+<tr class="separator:abe45c10a979fe812e3d9ecd72fe33a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae77538a7f3f4850715c95283e38b423f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#ae77538a7f3f4850715c95283e38b423f">LPC_USB</a>&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___u_s_b___type_def.html">LPC_USB_TypeDef</a>    *) <a class="el" href="_l_p_c13xx_8h.html#aa619008881e9f76dc31131313eff1b79">LPC_USB_BASE</a>   )</td></tr>
+<tr class="separator:ae77538a7f3f4850715c95283e38b423f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92f3de6ff5cfd5b8c290696fad07b18a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a92f3de6ff5cfd5b8c290696fad07b18a">LPC_GPIO0</a>&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___g_p_i_o___type_def.html">LPC_GPIO_TypeDef</a>   *) <a class="el" href="_l_p_c13xx_8h.html#a09e0e964ea1abf3b991772df2aa52405">LPC_GPIO0_BASE</a> )</td></tr>
+<tr class="separator:a92f3de6ff5cfd5b8c290696fad07b18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a335587dad4e6d0da56c1f3ad1c087d10"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a335587dad4e6d0da56c1f3ad1c087d10">LPC_GPIO1</a>&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___g_p_i_o___type_def.html">LPC_GPIO_TypeDef</a>   *) <a class="el" href="_l_p_c13xx_8h.html#a9fb0536853721a3073bd69d94d0b7ec2">LPC_GPIO1_BASE</a> )</td></tr>
+<tr class="separator:a335587dad4e6d0da56c1f3ad1c087d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27a09e8c08f9e209c6af70b0a3c56b39"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a27a09e8c08f9e209c6af70b0a3c56b39">LPC_GPIO2</a>&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___g_p_i_o___type_def.html">LPC_GPIO_TypeDef</a>   *) <a class="el" href="_l_p_c13xx_8h.html#ae5524b2d728167194033ec7a1841a36b">LPC_GPIO2_BASE</a> )</td></tr>
+<tr class="separator:a27a09e8c08f9e209c6af70b0a3c56b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e961eb01d0f1e61dd9b9d5979d2aafc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a6e961eb01d0f1e61dd9b9d5979d2aafc">LPC_GPIO3</a>&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___g_p_i_o___type_def.html">LPC_GPIO_TypeDef</a>   *) <a class="el" href="_l_p_c13xx_8h.html#a56c68c5326b521b3278a35f4d81369a9">LPC_GPIO3_BASE</a> )</td></tr>
+<tr class="separator:a6e961eb01d0f1e61dd9b9d5979d2aafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:ac3af4a32370fb28c4ade8bf2add80251"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083">IRQn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#ac3af4a32370fb28c4ade8bf2add80251">IRQn_Type</a></td></tr>
+<tr class="separator:ac3af4a32370fb28c4ade8bf2add80251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:a666eb0caeb12ec0e281415592ae89083"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083">IRQn</a> { <br />
+&#160;&#160;<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083ade177d9c70c89e084093024b932a4e30">NonMaskableInt_IRQn</a> = -14, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a33ff1cf7098de65d61b6354fee6cd5aa">MemoryManagement_IRQn</a> = -12, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a8693500eff174f16119e96234fee73af">BusFault_IRQn</a> = -11, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a6895237c9443601ac832efa635dd8bbf">UsageFault_IRQn</a> = -10, 
+<br />
+&#160;&#160;<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a4ce820b3cc6cf3a796b41aadc0cf1237">SVCall_IRQn</a> = -5, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a8e033fcef7aed98a31c60a7de206722c">DebugMonitor_IRQn</a> = -4, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a03c3cc89984928816d81793fc7bce4a2">PendSV_IRQn</a> = -2, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a6dbff8f8543325f3474cbae2446776e7">SysTick_IRQn</a> = -1, 
+<br />
+&#160;&#160;<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083af01060170ceb0d6d577beacf41635ae0">WAKEUP0_IRQn</a> = 0, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083ad8e04985fa950d0759ce92d557a7ed7f">WAKEUP1_IRQn</a> = 1, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083ad4b2bb0ae5c1d52381f8cb9413affbf6">WAKEUP2_IRQn</a> = 2, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a539f4e76913e12d41c7eec2e7c2239ed">WAKEUP3_IRQn</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a3df13a5d451b495e0a86647b0750a837">WAKEUP4_IRQn</a> = 4, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a3dfaf99bdb7c4b21bbc6a5e65d62ce5a">WAKEUP5_IRQn</a> = 5, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083ace715bb711cdb57694878d18789989a5">WAKEUP6_IRQn</a> = 6, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a06b94ece7d467d84b4706956fbe9dc43">WAKEUP7_IRQn</a> = 7, 
+<br />
+&#160;&#160;<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083ac84fd704de6c04930319dcc12c630698">WAKEUP8_IRQn</a> = 8, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083aa91c95e855a44d1d5c0b92ff2b979051">WAKEUP9_IRQn</a> = 9, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a85209d0ff16184ac86dfdb01d8b26502">WAKEUP10_IRQn</a> = 10, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a4f3db149d5fbb1513aa3c5e3fe9e7356">WAKEUP11_IRQn</a> = 11, 
+<br />
+&#160;&#160;<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a5595570597adb716c29763e5d5a2f484">WAKEUP12_IRQn</a> = 12, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a5fa43af622ca82a4ba3c600e4d0b38ce">WAKEUP13_IRQn</a> = 13, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a98b931d2e9b44ff25177049aaaaeb4ea">WAKEUP14_IRQn</a> = 14, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a453b8af352a3c8ecd7f416310f0b41a6">WAKEUP15_IRQn</a> = 15, 
+<br />
+&#160;&#160;<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a13fe28133ba629990e6cd56cc339380e">WAKEUP16_IRQn</a> = 16, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a97494a80fd2d2446ec3a3de55ac881d2">WAKEUP17_IRQn</a> = 17, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a607cd12d0baec91b5edb961023d983eb">WAKEUP18_IRQn</a> = 18, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083af01a667ea34908a06b3f5e3ce82359e2">WAKEUP19_IRQn</a> = 19, 
+<br />
+&#160;&#160;<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083af028992e87ee8560204bfadf099fe6f6">WAKEUP20_IRQn</a> = 20, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083addffd0b18eedd9fc49d74480541101c8">WAKEUP21_IRQn</a> = 21, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a6408054e12f366b80cf179f876e3ef0e">WAKEUP22_IRQn</a> = 22, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a9c5f7b4d20aaf1c7b3de5ea3315f635b">WAKEUP23_IRQn</a> = 23, 
+<br />
+&#160;&#160;<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a88472e2d96ea668328662daa0f2019a7">WAKEUP24_IRQn</a> = 24, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083ad918743a2434a24613a5618b207f74ea">WAKEUP25_IRQn</a> = 25, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a9af1a496e00d61a69590d45737b6a5a1">WAKEUP26_IRQn</a> = 26, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083afaf33393d9e878ee6ae667474b98b810">WAKEUP27_IRQn</a> = 27, 
+<br />
+&#160;&#160;<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a2f7308927b337a2898e06c2645f1cb45">WAKEUP28_IRQn</a> = 28, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083aecbc8d513825b070451787bedc3d24b6">WAKEUP29_IRQn</a> = 29, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a156f665249cda5324f5187b2254e696b">WAKEUP30_IRQn</a> = 30, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a3330600841375f0c63dd219f323b3ed1">WAKEUP31_IRQn</a> = 31, 
+<br />
+&#160;&#160;<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a4d156ef9209fcfcbef93a044a6a641bd">WAKEUP32_IRQn</a> = 32, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a7bc3cd0f396c4c9492164615a6c8ea81">WAKEUP33_IRQn</a> = 33, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083ade6f21488250c31eb07f3ce25c42f27c">WAKEUP34_IRQn</a> = 34, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083ac91290486c1f232acd8fb27fc4e9179e">WAKEUP35_IRQn</a> = 35, 
+<br />
+&#160;&#160;<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a02b4f488dc0dd080882de5afc7f5cfbc">WAKEUP36_IRQn</a> = 36, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a7566869172cf5f315e3ff0a543beb96b">WAKEUP37_IRQn</a> = 37, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a642f5ac845070f8e158a02afa6d407dc">WAKEUP38_IRQn</a> = 38, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a260f1667157711b3f03209883aef1369">WAKEUP39_IRQn</a> = 39, 
+<br />
+&#160;&#160;<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083adf8c31fe1c7ade2eb05f1414710dbce7">I2C_IRQn</a> = 40, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a6f5ed57785374cb1ba3a1256e0d991be">TIMER_16_0_IRQn</a> = 41, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a9d13f0d0bbeb7bc1c75d512a94d66c9f">TIMER_16_1_IRQn</a> = 42, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a7e40673d4557974606b5d9670c0c50d0">TIMER_32_0_IRQn</a> = 43, 
+<br />
+&#160;&#160;<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083ac178a073454f598a32b7f95bcaba7679">TIMER_32_1_IRQn</a> = 44, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a91a7a38ad2f048e2813b98dc68f88adc">SSP_IRQn</a> = 45, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a6c8d6262fd7ecedc57b2fe9209be9765">SSP0_IRQn</a> = 45, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a9d9be6e918c912367e393dae3480eabb">UART_IRQn</a> = 46, 
+<br />
+&#160;&#160;<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a5078f46ddc47f29eae4aa40bd57d1692">USB_IRQn</a> = 47, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a6c024f11db1cfcea781863a310a18a03">USB_FIQn</a> = 48, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a4d69175258ae261dd545001e810421b3">ADC_IRQn</a> = 49, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a78573b84a4133ef5812b33ce10dcba12">WDT_IRQn</a> = 50, 
+<br />
+&#160;&#160;<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083ac2ee5960aed41ff349aa7a86c37e9ab2">BOD_IRQn</a> = 51, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a0aa7c6d345ccb55fa659482559924063">RESERVED_IRQn</a> = 52, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a14098dd2e0d0331c1e5f1f80dde14371">EINT3_IRQn</a> = 53, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a40ab356422a691418668d6bbfd9f17b9">EINT2_IRQn</a> = 54, 
+<br />
+&#160;&#160;<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083ad855ae101e21a04054a9844066900d7c">EINT1_IRQn</a> = 55, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083a0a3db3233549f012f8ecb88f0510adcf">EINT0_IRQn</a> = 56, 
+<a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083adcc0cfa46f0d13c2de0f3e826c10a789">SSP1_IRQn</a> = 57
+<br />
+ }<tr class="separator:a666eb0caeb12ec0e281415592ae89083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+</table>
+<h2 class="groupheader">マクロ定義詳解</h2>
+<a class="anchor" id="a4127d1b31aaf336fab3d7329d117f448"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __MPU_PRESENT&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>MPU present or not </p>
+
+</div>
+</div>
+<a class="anchor" id="ae3fe3587d5100c787e02102ce3944460"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __NVIC_PRIO_BITS&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Number of Bits used for Priority Levels </p>
+
+</div>
+</div>
+<a class="anchor" id="ab58771b4ec03f9bdddc84770f7c95c68"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __Vendor_SysTickConfig&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set to 1 if different SysTick Config is used </p>
+
+</div>
+</div>
+<a class="anchor" id="ab6eaf639d3a1eec83583a9e11ab7336f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_ADC&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___a_d_c___type_def.html">LPC_ADC_TypeDef</a>    *) <a class="el" href="_l_p_c13xx_8h.html#a2396e0d0c565e4c1c3b2fc593bd6c37f">LPC_ADC_BASE</a>   )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2396e0d0c565e4c1c3b2fc593bd6c37f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_ADC_BASE&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x1C000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8e0d25ffe3428ed27f963e83089046a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_AHB_BASE&#160;&#160;&#160;(0x50000000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a55cab996c3594a0f4cc459ec8e10daea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_APB0_BASE&#160;&#160;&#160;(0x40000000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a663c7a2d9c286efce1fd9c90c0068dac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_CT16B0_BASE&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x0C000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5f33f849b010785defa0105cf6eb87f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_CT16B1_BASE&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x10000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a10dcc3ac224bf132010cb6bc6fc7d9c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_CT32B0_BASE&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x14000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a70f807832b5a2afb17265d22fed6160d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_CT32B1_BASE&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x18000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7d7417b6cd6c6975fa03de03920d27e8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_FLASH_BASE&#160;&#160;&#160;(0x00000000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a92f3de6ff5cfd5b8c290696fad07b18a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_GPIO0&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___g_p_i_o___type_def.html">LPC_GPIO_TypeDef</a>   *) <a class="el" href="_l_p_c13xx_8h.html#a09e0e964ea1abf3b991772df2aa52405">LPC_GPIO0_BASE</a> )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a09e0e964ea1abf3b991772df2aa52405"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_GPIO0_BASE&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a8e0d25ffe3428ed27f963e83089046a8">LPC_AHB_BASE</a>  + 0x00000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a335587dad4e6d0da56c1f3ad1c087d10"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_GPIO1&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___g_p_i_o___type_def.html">LPC_GPIO_TypeDef</a>   *) <a class="el" href="_l_p_c13xx_8h.html#a9fb0536853721a3073bd69d94d0b7ec2">LPC_GPIO1_BASE</a> )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9fb0536853721a3073bd69d94d0b7ec2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_GPIO1_BASE&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a8e0d25ffe3428ed27f963e83089046a8">LPC_AHB_BASE</a>  + 0x10000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a27a09e8c08f9e209c6af70b0a3c56b39"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_GPIO2&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___g_p_i_o___type_def.html">LPC_GPIO_TypeDef</a>   *) <a class="el" href="_l_p_c13xx_8h.html#ae5524b2d728167194033ec7a1841a36b">LPC_GPIO2_BASE</a> )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae5524b2d728167194033ec7a1841a36b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_GPIO2_BASE&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a8e0d25ffe3428ed27f963e83089046a8">LPC_AHB_BASE</a>  + 0x20000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6e961eb01d0f1e61dd9b9d5979d2aafc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_GPIO3&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___g_p_i_o___type_def.html">LPC_GPIO_TypeDef</a>   *) <a class="el" href="_l_p_c13xx_8h.html#a56c68c5326b521b3278a35f4d81369a9">LPC_GPIO3_BASE</a> )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a56c68c5326b521b3278a35f4d81369a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_GPIO3_BASE&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a8e0d25ffe3428ed27f963e83089046a8">LPC_AHB_BASE</a>  + 0x30000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5feb4a6692784a25eaed627661bd8f36"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_GPIO_BASE&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a8e0d25ffe3428ed27f963e83089046a8">LPC_AHB_BASE</a>  + 0x00000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a70a2faf2e119737f0e660984564d4907"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_I2C&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___i2_c___type_def.html">LPC_I2C_TypeDef</a>    *) <a class="el" href="_l_p_c13xx_8h.html#a9e53652929424015ade23fe30e1d022b">LPC_I2C_BASE</a>   )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9e53652929424015ade23fe30e1d022b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_I2C_BASE&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x00000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aabc651799ba17b0dd4a0114c8d48a145"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_IOCON&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___i_o_c_o_n___type_def.html">LPC_IOCON_TypeDef</a>  *) <a class="el" href="_l_p_c13xx_8h.html#ae48aea115d5924805263d7a15402d4fa">LPC_IOCON_BASE</a> )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae48aea115d5924805263d7a15402d4fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_IOCON_BASE&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x44000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9d540cc313db00679c10f9ac1961b06a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_PMU&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___p_m_u___type_def.html">LPC_PMU_TypeDef</a>    *) <a class="el" href="_l_p_c13xx_8h.html#a865bed8ad61e9e273439ad1349a46d68">LPC_PMU_BASE</a>   )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a865bed8ad61e9e273439ad1349a46d68"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_PMU_BASE&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x38000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9782814ad6434f200b65440d2ac01c2a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_RAM_BASE&#160;&#160;&#160;(0x10000000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3e1177fbcbb4d87f0a2391e59042a5fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_SSP&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___s_s_p___type_def.html">LPC_SSP_TypeDef</a>    *) <a class="el" href="_l_p_c13xx_8h.html#a6b3767362481aea8871b1353c163c912">LPC_SSP_BASE</a>   )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac213e0325a8e8a972bd2e0dd6ccf353c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_SSP0&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___s_s_p___type_def.html">LPC_SSP_TypeDef</a>    *) <a class="el" href="_l_p_c13xx_8h.html#a53fb1af80b541545988f2a966681abfd">LPC_SSP0_BASE</a>  )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a53fb1af80b541545988f2a966681abfd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_SSP0_BASE&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x40000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a09c4610ada1d9aa18913963cbd1a6e52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_SSP1&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___s_s_p___type_def.html">LPC_SSP_TypeDef</a>    *) <a class="el" href="_l_p_c13xx_8h.html#a05d118997f53f596d3a087f8b91a1969">LPC_SSP1_BASE</a>  )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a05d118997f53f596d3a087f8b91a1969"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_SSP1_BASE&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x58000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6b3767362481aea8871b1353c163c912"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_SSP_BASE&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x40000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abe45c10a979fe812e3d9ecd72fe33a2f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_SYSCON&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___s_y_s_c_o_n___type_def.html">LPC_SYSCON_TypeDef</a> *) <a class="el" href="_l_p_c13xx_8h.html#a976cd83a81fd89a472221e68f0c0fbff">LPC_SYSCON_BASE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a976cd83a81fd89a472221e68f0c0fbff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_SYSCON_BASE&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x48000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae3e75d39e502088028bfe901b28f6471"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_TMR16B0&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___t_m_r___type_def.html">LPC_TMR_TypeDef</a>    *) <a class="el" href="_l_p_c13xx_8h.html#a663c7a2d9c286efce1fd9c90c0068dac">LPC_CT16B0_BASE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad82d36f91fa86aad5e3d57f5543e4cf6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_TMR16B1&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___t_m_r___type_def.html">LPC_TMR_TypeDef</a>    *) <a class="el" href="_l_p_c13xx_8h.html#a5f33f849b010785defa0105cf6eb87f1">LPC_CT16B1_BASE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a59694d96a23b3e6de134dc5f34ad61e8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_TMR32B0&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___t_m_r___type_def.html">LPC_TMR_TypeDef</a>    *) <a class="el" href="_l_p_c13xx_8h.html#a10dcc3ac224bf132010cb6bc6fc7d9c9">LPC_CT32B0_BASE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab5cca8bad611399aad1da65cfafcbe2e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_TMR32B1&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___t_m_r___type_def.html">LPC_TMR_TypeDef</a>    *) <a class="el" href="_l_p_c13xx_8h.html#a70f807832b5a2afb17265d22fed6160d">LPC_CT32B1_BASE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a31a69c06776f4a82569d7ed7e91bd45c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_UART&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___u_a_r_t___type_def.html">LPC_UART_TypeDef</a>   *) <a class="el" href="_l_p_c13xx_8h.html#a50ba023c2b0046a5be8b1b236effeb35">LPC_UART_BASE</a>  )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a50ba023c2b0046a5be8b1b236effeb35"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_UART_BASE&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x08000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae77538a7f3f4850715c95283e38b423f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_USB&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___u_s_b___type_def.html">LPC_USB_TypeDef</a>    *) <a class="el" href="_l_p_c13xx_8h.html#aa619008881e9f76dc31131313eff1b79">LPC_USB_BASE</a>   )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa619008881e9f76dc31131313eff1b79"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_USB_BASE&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x20000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7d68cf0829652bd8c1f837c697653c5f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_WDT&#160;&#160;&#160;((<a class="el" href="struct_l_p_c___w_d_t___type_def.html">LPC_WDT_TypeDef</a>    *) <a class="el" href="_l_p_c13xx_8h.html#a02a30b0be4672972c3af9e5aebdcfea1">LPC_WDT_BASE</a>   )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a02a30b0be4672972c3af9e5aebdcfea1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LPC_WDT_BASE&#160;&#160;&#160;(<a class="el" href="_l_p_c13xx_8h.html#a55cab996c3594a0f4cc459ec8e10daea">LPC_APB0_BASE</a> + 0x04000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">型定義詳解</h2>
+<a class="anchor" id="ac3af4a32370fb28c4ade8bf2add80251"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083">IRQn</a>  <a class="el" href="_l_p_c13xx_8h.html#ac3af4a32370fb28c4ade8bf2add80251">IRQn_Type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">列挙型詳解</h2>
+<a class="anchor" id="a666eb0caeb12ec0e281415592ae89083"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_l_p_c13xx_8h.html#a666eb0caeb12ec0e281415592ae89083">IRQn</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083ade177d9c70c89e084093024b932a4e30"></a>NonMaskableInt_IRQn&#160;</td><td class="fielddoc">
+<p>2 Non Maskable Interrupt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a33ff1cf7098de65d61b6354fee6cd5aa"></a>MemoryManagement_IRQn&#160;</td><td class="fielddoc">
+<p>4 Cortex-M3 Memory Management Interrupt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a8693500eff174f16119e96234fee73af"></a>BusFault_IRQn&#160;</td><td class="fielddoc">
+<p>5 Cortex-M3 Bus Fault Interrupt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a6895237c9443601ac832efa635dd8bbf"></a>UsageFault_IRQn&#160;</td><td class="fielddoc">
+<p>6 Cortex-M3 Usage Fault Interrupt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a4ce820b3cc6cf3a796b41aadc0cf1237"></a>SVCall_IRQn&#160;</td><td class="fielddoc">
+<p>11 Cortex-M3 SV Call Interrupt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a8e033fcef7aed98a31c60a7de206722c"></a>DebugMonitor_IRQn&#160;</td><td class="fielddoc">
+<p>12 Cortex-M3 Debug Monitor Interrupt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a03c3cc89984928816d81793fc7bce4a2"></a>PendSV_IRQn&#160;</td><td class="fielddoc">
+<p>14 Cortex-M3 Pend SV Interrupt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a6dbff8f8543325f3474cbae2446776e7"></a>SysTick_IRQn&#160;</td><td class="fielddoc">
+<p>15 Cortex-M3 System Tick Interrupt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083af01060170ceb0d6d577beacf41635ae0"></a>WAKEUP0_IRQn&#160;</td><td class="fielddoc">
+<p>All I/O pins can be used as wakeup source. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083ad8e04985fa950d0759ce92d557a7ed7f"></a>WAKEUP1_IRQn&#160;</td><td class="fielddoc">
+<p>There are 40 pins in total for LPC17xx </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083ad4b2bb0ae5c1d52381f8cb9413affbf6"></a>WAKEUP2_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a539f4e76913e12d41c7eec2e7c2239ed"></a>WAKEUP3_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a3df13a5d451b495e0a86647b0750a837"></a>WAKEUP4_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a3dfaf99bdb7c4b21bbc6a5e65d62ce5a"></a>WAKEUP5_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083ace715bb711cdb57694878d18789989a5"></a>WAKEUP6_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a06b94ece7d467d84b4706956fbe9dc43"></a>WAKEUP7_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083ac84fd704de6c04930319dcc12c630698"></a>WAKEUP8_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083aa91c95e855a44d1d5c0b92ff2b979051"></a>WAKEUP9_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a85209d0ff16184ac86dfdb01d8b26502"></a>WAKEUP10_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a4f3db149d5fbb1513aa3c5e3fe9e7356"></a>WAKEUP11_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a5595570597adb716c29763e5d5a2f484"></a>WAKEUP12_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a5fa43af622ca82a4ba3c600e4d0b38ce"></a>WAKEUP13_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a98b931d2e9b44ff25177049aaaaeb4ea"></a>WAKEUP14_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a453b8af352a3c8ecd7f416310f0b41a6"></a>WAKEUP15_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a13fe28133ba629990e6cd56cc339380e"></a>WAKEUP16_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a97494a80fd2d2446ec3a3de55ac881d2"></a>WAKEUP17_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a607cd12d0baec91b5edb961023d983eb"></a>WAKEUP18_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083af01a667ea34908a06b3f5e3ce82359e2"></a>WAKEUP19_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083af028992e87ee8560204bfadf099fe6f6"></a>WAKEUP20_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083addffd0b18eedd9fc49d74480541101c8"></a>WAKEUP21_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a6408054e12f366b80cf179f876e3ef0e"></a>WAKEUP22_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a9c5f7b4d20aaf1c7b3de5ea3315f635b"></a>WAKEUP23_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a88472e2d96ea668328662daa0f2019a7"></a>WAKEUP24_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083ad918743a2434a24613a5618b207f74ea"></a>WAKEUP25_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a9af1a496e00d61a69590d45737b6a5a1"></a>WAKEUP26_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083afaf33393d9e878ee6ae667474b98b810"></a>WAKEUP27_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a2f7308927b337a2898e06c2645f1cb45"></a>WAKEUP28_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083aecbc8d513825b070451787bedc3d24b6"></a>WAKEUP29_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a156f665249cda5324f5187b2254e696b"></a>WAKEUP30_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a3330600841375f0c63dd219f323b3ed1"></a>WAKEUP31_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a4d156ef9209fcfcbef93a044a6a641bd"></a>WAKEUP32_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a7bc3cd0f396c4c9492164615a6c8ea81"></a>WAKEUP33_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083ade6f21488250c31eb07f3ce25c42f27c"></a>WAKEUP34_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083ac91290486c1f232acd8fb27fc4e9179e"></a>WAKEUP35_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a02b4f488dc0dd080882de5afc7f5cfbc"></a>WAKEUP36_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a7566869172cf5f315e3ff0a543beb96b"></a>WAKEUP37_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a642f5ac845070f8e158a02afa6d407dc"></a>WAKEUP38_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a260f1667157711b3f03209883aef1369"></a>WAKEUP39_IRQn&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083adf8c31fe1c7ade2eb05f1414710dbce7"></a>I2C_IRQn&#160;</td><td class="fielddoc">
+<p>I2C Interrupt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a6f5ed57785374cb1ba3a1256e0d991be"></a>TIMER_16_0_IRQn&#160;</td><td class="fielddoc">
+<p>16-bit Timer0 Interrupt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a9d13f0d0bbeb7bc1c75d512a94d66c9f"></a>TIMER_16_1_IRQn&#160;</td><td class="fielddoc">
+<p>16-bit Timer1 Interrupt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a7e40673d4557974606b5d9670c0c50d0"></a>TIMER_32_0_IRQn&#160;</td><td class="fielddoc">
+<p>32-bit Timer0 Interrupt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083ac178a073454f598a32b7f95bcaba7679"></a>TIMER_32_1_IRQn&#160;</td><td class="fielddoc">
+<p>32-bit Timer1 Interrupt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a91a7a38ad2f048e2813b98dc68f88adc"></a>SSP_IRQn&#160;</td><td class="fielddoc">
+<p>SSP0 Interrupt - original name </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a6c8d6262fd7ecedc57b2fe9209be9765"></a>SSP0_IRQn&#160;</td><td class="fielddoc">
+<p>SSP0 Interrupt - new name </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a9d9be6e918c912367e393dae3480eabb"></a>UART_IRQn&#160;</td><td class="fielddoc">
+<p>UART Interrupt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a5078f46ddc47f29eae4aa40bd57d1692"></a>USB_IRQn&#160;</td><td class="fielddoc">
+<p>USB Regular Interrupt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a6c024f11db1cfcea781863a310a18a03"></a>USB_FIQn&#160;</td><td class="fielddoc">
+<p>USB Fast Interrupt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a4d69175258ae261dd545001e810421b3"></a>ADC_IRQn&#160;</td><td class="fielddoc">
+<p>A/D Converter Interrupt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a78573b84a4133ef5812b33ce10dcba12"></a>WDT_IRQn&#160;</td><td class="fielddoc">
+<p>Watchdog timer Interrupt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083ac2ee5960aed41ff349aa7a86c37e9ab2"></a>BOD_IRQn&#160;</td><td class="fielddoc">
+<p>Brown Out Detect(BOD) Interrupt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a0aa7c6d345ccb55fa659482559924063"></a>RESERVED_IRQn&#160;</td><td class="fielddoc">
+<p>Reserved Interrupt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a14098dd2e0d0331c1e5f1f80dde14371"></a>EINT3_IRQn&#160;</td><td class="fielddoc">
+<p>External Interrupt 3 Interrupt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a40ab356422a691418668d6bbfd9f17b9"></a>EINT2_IRQn&#160;</td><td class="fielddoc">
+<p>External Interrupt 2 Interrupt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083ad855ae101e21a04054a9844066900d7c"></a>EINT1_IRQn&#160;</td><td class="fielddoc">
+<p>External Interrupt 1 Interrupt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083a0a3db3233549f012f8ecb88f0510adcf"></a>EINT0_IRQn&#160;</td><td class="fielddoc">
+<p>External Interrupt 0 Interrupt </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a666eb0caeb12ec0e281415592ae89083adcc0cfa46f0d13c2de0f3e826c10a789"></a>SSP1_IRQn&#160;</td><td class="fielddoc">
+<p>SSP1 Interrupt </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_a5be7bbed3ff2f129951759fe96bf5d5.html">workspace</a></li><li class="navelem"><a class="el" href="dir_5c6ec184c9ebe6ece732ff4d1213969a.html">CMSISv1p30_LPC13xx</a></li><li class="navelem"><a class="el" href="dir_85366aad1cf64567cb06b76877bf833e.html">inc</a></li><li class="navelem"><a class="el" href="_l_p_c13xx_8h.html">LPC13xx.h</a></li>
+    <li class="footer">構築:
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

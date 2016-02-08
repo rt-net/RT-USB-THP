@@ -1,0 +1,8 @@
+<map id="I2CEngine" name="I2CEngine">
+<area shape="rect" id="node2" href="$bme280_8c.html#aab2d0c7ae27504fd3abdca793bc20307" title="bme280_init" alt="" coords="148,5,240,32"/>
+<area shape="rect" id="node4" href="$bme280_8c.html#a4270c349bb9868b70c6a46c8d5c0bc49" title="get_rawdata" alt="" coords="148,107,240,133"/>
+<area shape="rect" id="node6" href="$bme280_8c.html#af752df8e5eb19ac83f8e631cbf6c8841" title="get_trimdata" alt="" coords="147,56,241,83"/>
+<area shape="rect" id="node7" href="$bme280_8c.html#a62fe1672d6460d5a69a1b367f05776fa" title="whoAmIBME280" alt="" coords="135,157,253,184"/>
+<area shape="rect" id="node3" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="357,31,408,57"/>
+<area shape="rect" id="node5" href="$_main_function_8c.html#a722d97fdabdf6a349b0ad02c82da1d23" title="TIMER32_1_IRQHandler" alt="" coords="301,107,464,133"/>
+</map>

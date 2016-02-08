@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>RT-USB-THP: main.c ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">RT-USB-THP
+   &#160;<span id="projectnumber">0</span>
+   </div>
+   <div id="projectbrief">USB出力温湿気圧センサモジュールのサンプルプログラムに関する説明</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>大域各種</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('main_8c.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">main.c ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>温湿気圧センサのサンプルプログラム<br />
+  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="_l_p_c13xx_8h_source.html">LPC13xx.h</a>&quot;</code><br />
+<code>#include &quot;core_cm3.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="type_8h_source.html">type.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="debug_8h_source.html">debug.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="i2c_8h_source.html">i2c.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="io_8h_source.html">io.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_system_tick_timer_8h_source.html">SystemTickTimer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="timer_8h_source.html">timer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="usb_transmission_8h_source.html">usbTransmission.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="uart_8h_source.html">uart.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_main_function_8h_source.html">MainFunction.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_user_interface_8h_source.html">UserInterface.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bme280_8h_source.html">bme280.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="usb_8h_source.html">usb.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="usbcfg_8h_source.html">usbcfg.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="usbhw_8h_source.html">usbhw.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="usbcore_8h_source.html">usbcore.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="cdc_8h_source.html">cdc.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="cdcuser_8h_source.html">cdcuser.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+main.c の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8c__incl.png" border="0" usemap="#main_8c" alt=""/></div>
+<map name="main_8c" id="main_8c">
+<area shape="rect" id="node2" href="_l_p_c13xx_8h.html" title="LPC13xx.h" alt="" coords="75,80,162,107"/>
+<area shape="rect" id="node7" href="type_8h.html" title="type.h" alt="" coords="441,155,500,181"/>
+<area shape="rect" id="node8" href="debug_8h.html" title="debug.h" alt="" coords="353,80,421,107"/>
+<area shape="rect" id="node9" href="i2c_8h.html" title="i2c.h" alt="" coords="445,80,496,107"/>
+<area shape="rect" id="node10" href="io_8h.html" title="io.h" alt="" coords="520,80,563,107"/>
+<area shape="rect" id="node11" href="_system_tick_timer_8h.html" title="SystemTickTimer.h" alt="" coords="587,80,722,107"/>
+<area shape="rect" id="node12" href="timer_8h.html" title="timer.h" alt="" coords="746,80,809,107"/>
+<area shape="rect" id="node13" href="usb_transmission_8h.html" title="usbTransmission.h" alt="" coords="833,80,964,107"/>
+<area shape="rect" id="node14" href="uart_8h.html" title="uart.h" alt="" coords="989,80,1043,107"/>
+<area shape="rect" id="node15" href="_main_function_8h.html" title="MainFunction.h" alt="" coords="1067,80,1178,107"/>
+<area shape="rect" id="node16" href="_user_interface_8h.html" title="LED,SW,電源電圧の監視等の機能の実装 &#160;&#160;" alt="" coords="1203,80,1312,107"/>
+<area shape="rect" id="node17" href="bme280_8h.html" title="bme280.h" alt="" coords="1337,80,1415,107"/>
+<area shape="rect" id="node18" href="usb_8h.html" title="usb.h" alt="" coords="1439,80,1494,107"/>
+<area shape="rect" id="node19" href="usbcfg_8h.html" title="usbcfg.h" alt="" coords="1518,80,1589,107"/>
+<area shape="rect" id="node20" href="usbhw_8h.html" title="usbhw.h" alt="" coords="1613,80,1683,107"/>
+<area shape="rect" id="node21" href="usbcore_8h.html" title="usbcore.h" alt="" coords="1707,80,1786,107"/>
+<area shape="rect" id="node22" href="cdc_8h.html" title="cdc.h" alt="" coords="1810,80,1865,107"/>
+<area shape="rect" id="node23" href="cdcuser_8h.html" title="cdcuser.h" alt="" coords="1889,80,1967,107"/>
+<area shape="rect" id="node3" href="_c_m_s_i_sv1p30___l_p_c13xx_2inc_2core__cm3_8h.html" title="core_cm3.h" alt="" coords="5,155,96,181"/>
+<area shape="rect" id="node5" href="system___l_p_c13xx_8h.html" title="CMSIS Cortex&#45;M3 Device Peripheral Access Layer Header File for the NXP LPC13xx Device Series..." alt="" coords="120,155,256,181"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a2858154e2009b0e6e616f313177762bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a2858154e2009b0e6e616f313177762bc">init</a> (void)</td></tr>
+<tr class="separator:a2858154e2009b0e6e616f313177762bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
+<tr class="separator:a840291bc02cba5474a4cb46a9b9566fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>温湿気圧センサのサンプルプログラム<br />
+ </p>
+<dl class="section author"><dt>著者</dt><dd>RTCorp. Ryota Takahashi </dd></dl>
+</div><h2 class="groupheader">関数詳解</h2>
+<a class="anchor" id="a2858154e2009b0e6e616f313177762bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>各種ペリフェラルの初期化</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>void </dd></dl>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8c_a2858154e2009b0e6e616f313177762bc_cgraph.png" border="0" usemap="#main_8c_a2858154e2009b0e6e616f313177762bc_cgraph" alt=""/></div>
+<map name="main_8c_a2858154e2009b0e6e616f313177762bc_cgraph" id="main_8c_a2858154e2009b0e6e616f313177762bc_cgraph">
+<area shape="rect" id="node2" href="io_8h.html#ac3c73735519c0fbd83b55f44c3536b96" title="initIO" alt="" coords="125,5,177,32"/>
+<area shape="rect" id="node3" href="_user_interface_8h.html#a0ca6846e1e6a9a35688a5d07c9564ba5" title="turnLED" alt="" coords="116,56,185,83"/>
+<area shape="rect" id="node4" href="_system_tick_timer_8h.html#a18af7476504a76def67727301e3968fb" title="wait1msec" alt="" coords="109,107,193,133"/>
+<area shape="rect" id="node5" href="usbhw_8h.html#a36bb0f21ba89a918181d3a837a319129" title="USBIOClkConfig" alt="" coords="92,157,209,184"/>
+<area shape="rect" id="node6" href="timer_8h.html#a671f0649ffc60f98caf701551de8a18b" title="initTimer32_0" alt="" coords="101,208,200,235"/>
+<area shape="rect" id="node7" href="timer_8h.html#a37e0ba7719329a1a2dc569c95c1b0d85" title="initTimer32_1" alt="" coords="101,259,200,285"/>
+<area shape="rect" id="node8" href="usbhw_8h.html#a35fe971cbcbfe8813199e869284cb862" title="USB_Init" alt="" coords="114,309,187,336"/>
+<area shape="rect" id="node13" href="uart_8h.html#ae64bef5f9fbb35532c224933a52aec5c" title="UARTInit" alt="" coords="114,360,187,387"/>
+<area shape="rect" id="node14" href="i2c_8h.html#a279d004d45293dff5260643be80c1319" title="I2CInit" alt="" coords="121,411,180,437"/>
+<area shape="rect" id="node15" href="_user_interface_8h.html#a0e6a38adb3139816ca5ead4dfc842caa" title="initUI" alt="" coords="125,461,176,488"/>
+<area shape="rect" id="node17" href="_main_function_8h.html#ab862d3a92cd2b1082621b95d79718777" title="initMainFunction" alt="" coords="92,512,209,539"/>
+<area shape="rect" id="node9" href="usbhw_8c.html#abfc0896707a9437a0c3b0ac611da59aa" title="USB_Reset" alt="" coords="274,284,365,311"/>
+<area shape="rect" id="node10" href="usbhw_8c.html#ae0b5ab428469821dab3912e9a9540f38" title="USB_SetAddress" alt="" coords="257,335,381,361"/>
+<area shape="rect" id="node11" href="usbhw_8c.html#ae88115ba5c676e7d806a8062f981525a" title="WrCmdDat" alt="" coords="429,335,516,361"/>
+<area shape="rect" id="node12" href="usbhw_8c.html#a43a57d8b8cb335d6c95b8517a46c244f" title="WrCmd" alt="" coords="564,335,631,361"/>
+<area shape="rect" id="node16" href="timer_8h.html#aa4de0ba8837a863b85d9cc26491d3a48" title="startTimer32_0" alt="" coords="265,461,373,488"/>
+<area shape="rect" id="node18" href="timer_8h.html#a824037b66943b82834b0a5b889727bec" title="startTimer32_1" alt="" coords="265,512,373,539"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8c_a2858154e2009b0e6e616f313177762bc_icgraph.png" border="0" usemap="#main_8c_a2858154e2009b0e6e616f313177762bc_icgraph" alt=""/></div>
+<map name="main_8c_a2858154e2009b0e6e616f313177762bc_icgraph" id="main_8c_a2858154e2009b0e6e616f313177762bc_icgraph">
+<area shape="rect" id="node2" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="92,5,143,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a840291bc02cba5474a4cb46a9b9566fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>main関数</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>0 </dd></dl>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph.png" border="0" usemap="#main_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph" alt=""/></div>
+<map name="main_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph" id="main_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph">
+<area shape="rect" id="node2" href="main_8c.html#a2858154e2009b0e6e616f313177762bc" title="init" alt="" coords="153,347,192,373"/>
+<area shape="rect" id="node20" href="usb_transmission_8h.html#a00ae3d2d42d3c1d67f8779c026b36ec9" title="tryUSBConnect" alt="" coords="117,119,229,145"/>
+<area shape="rect" id="node22" href="_user_interface_8h.html#a5a22098bf625e41184cf398dddc55c8f" title="flashLED" alt="" coords="311,169,385,196"/>
+<area shape="rect" id="node23" href="_main_function_8h.html#a74ff919bbe2bc33306db409cd474705f" title="setSendDataEnable" alt="" coords="104,397,241,424"/>
+<area shape="rect" id="node24" href="usb_transmission_8h.html#a73f8c90b14a22c852f931e269184e8ad" title="isUSBConfig" alt="" coords="125,448,220,475"/>
+<area shape="rect" id="node25" href="bme280_8h.html#af752df8e5eb19ac83f8e631cbf6c8841" title="get_trimdata" alt="" coords="125,68,220,95"/>
+<area shape="rect" id="node29" href="bme280_8h.html#aab2d0c7ae27504fd3abdca793bc20307" title="bme280_init" alt="" coords="127,17,219,44"/>
+<area shape="rect" id="node3" href="io_8h.html#ac3c73735519c0fbd83b55f44c3536b96" title="initIO" alt="" coords="322,372,374,399"/>
+<area shape="rect" id="node4" href="_user_interface_8h.html#a0ca6846e1e6a9a35688a5d07c9564ba5" title="turnLED" alt="" coords="313,423,383,449"/>
+<area shape="rect" id="node5" href="_system_tick_timer_8h.html#a18af7476504a76def67727301e3968fb" title="wait1msec" alt="" coords="306,68,390,95"/>
+<area shape="rect" id="node6" href="usbhw_8h.html#a36bb0f21ba89a918181d3a837a319129" title="USBIOClkConfig" alt="" coords="289,524,407,551"/>
+<area shape="rect" id="node7" href="timer_8h.html#a671f0649ffc60f98caf701551de8a18b" title="initTimer32_0" alt="" coords="299,575,397,601"/>
+<area shape="rect" id="node8" href="timer_8h.html#a37e0ba7719329a1a2dc569c95c1b0d85" title="initTimer32_1" alt="" coords="299,625,397,652"/>
+<area shape="rect" id="node9" href="usbhw_8h.html#a35fe971cbcbfe8813199e869284cb862" title="USB_Init" alt="" coords="311,473,385,500"/>
+<area shape="rect" id="node14" href="uart_8h.html#ae64bef5f9fbb35532c224933a52aec5c" title="UARTInit" alt="" coords="311,676,385,703"/>
+<area shape="rect" id="node15" href="i2c_8h.html#a279d004d45293dff5260643be80c1319" title="I2CInit" alt="" coords="319,271,377,297"/>
+<area shape="rect" id="node16" href="_user_interface_8h.html#a0e6a38adb3139816ca5ead4dfc842caa" title="initUI" alt="" coords="323,220,373,247"/>
+<area shape="rect" id="node18" href="_main_function_8h.html#ab862d3a92cd2b1082621b95d79718777" title="initMainFunction" alt="" coords="289,321,407,348"/>
+<area shape="rect" id="node10" href="usbhw_8c.html#abfc0896707a9437a0c3b0ac611da59aa" title="USB_Reset" alt="" coords="471,473,562,500"/>
+<area shape="rect" id="node11" href="usbhw_8c.html#ae0b5ab428469821dab3912e9a9540f38" title="USB_SetAddress" alt="" coords="455,397,579,424"/>
+<area shape="rect" id="node12" href="usbhw_8c.html#ae88115ba5c676e7d806a8062f981525a" title="WrCmdDat" alt="" coords="627,265,713,292"/>
+<area shape="rect" id="node13" href="usbhw_8c.html#a43a57d8b8cb335d6c95b8517a46c244f" title="WrCmd" alt="" coords="761,265,828,292"/>
+<area shape="rect" id="node17" href="timer_8h.html#aa4de0ba8837a863b85d9cc26491d3a48" title="startTimer32_0" alt="" coords="463,220,571,247"/>
+<area shape="rect" id="node19" href="timer_8h.html#a824037b66943b82834b0a5b889727bec" title="startTimer32_1" alt="" coords="463,321,571,348"/>
+<area shape="rect" id="node21" href="usbhw_8h.html#a7b4ca59fc7f1a1f0e83b84a225fbe16e" title="USB_Connect" alt="" coords="465,132,569,159"/>
+<area shape="rect" id="node26" href="i2c_8h.html#a0036f04c55d6d2118405ca42632bdbd4" title="I2CEngine" alt="" coords="307,17,389,44"/>
+<area shape="rect" id="node27" href="i2c_8c.html#a7c87427cfa767315491db0a0c005ec59" title="I2CStart" alt="" coords="482,56,551,83"/>
+<area shape="rect" id="node28" href="i2c_8c.html#a7b1d12f3a83330eda885db24a701e1b5" title="I2CStop" alt="" coords="483,5,551,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_a5be7bbed3ff2f129951759fe96bf5d5.html">workspace</a></li><li class="navelem"><a class="el" href="dir_e849b43f2720135ff09dee0ba18ac893.html">RT-USB-THP-sample</a></li><li class="navelem"><a class="el" href="dir_e12c316076f616ada5cf0ac3c0e63a85.html">src</a></li><li class="navelem"><a class="el" href="dir_398d2ec10e2ef4c144be083ddd812ae5.html">MAIN</a></li><li class="navelem"><a class="el" href="main_8c.html">main.c</a></li>
+    <li class="footer">構築:
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

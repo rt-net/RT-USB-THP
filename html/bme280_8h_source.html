@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>RT-USB-THP: bme280.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">RT-USB-THP
+   &#160;<span id="projectnumber">0</span>
+   </div>
+   <div id="projectbrief">USB出力温湿気圧センサモジュールのサンプルプログラムに関する説明</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>大域各種</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('bme280_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">bme280.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="bme280_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __BME280_H__</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __BME280_H__</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="type_8h.html">type.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keywordtype">void</span> <a class="code" href="bme280_8h.html#aab2d0c7ae27504fd3abdca793bc20307">bme280_init</a>(<span class="keywordtype">void</span>); <span class="comment">//BME初期化</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keywordtype">void</span> <a class="code" href="bme280_8h.html#a4270c349bb9868b70c6a46c8d5c0bc49">get_rawdata</a>(<span class="keywordtype">int</span> *_t_data,<span class="keywordtype">int</span> *_p_data ,<span class="keywordtype">int</span> *_h_data);   <span class="comment">//生のレジスタデータ取得</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keywordtype">void</span> <a class="code" href="bme280_8h.html#af752df8e5eb19ac83f8e631cbf6c8841">get_trimdata</a>(<span class="keywordtype">void</span>);    <span class="comment">//キャリブレーション用の値取得</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<a class="code" href="type_8h.html#ab1967d8591af1a4e48c37fd2b0f184d0">int32_t</a>  <a class="code" href="bme280_8h.html#ae9e3b7c05fc671e59a5442e0695bc7ad">calib_temparture</a>(<a class="code" href="type_8h.html#ab1967d8591af1a4e48c37fd2b0f184d0">int32_t</a> _t_rawdata);  <span class="comment">//温度キャリブレーション</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<a class="code" href="type_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="code" href="bme280_8h.html#a82b60d36d084997fcff3aba83c5bb46f">calib_pressure</a>(<a class="code" href="type_8h.html#ab1967d8591af1a4e48c37fd2b0f184d0">int32_t</a> _p_rawdata);   <span class="comment">//気圧キャリブレーション</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="bme280_8h.html#ae2c42108ca0b31c706d0a9c2a3ee47db">calib_humidity</a>(<span class="keywordtype">int</span> h_rawdata);    <span class="comment">//湿度キャリブレーション</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keywordtype">double</span> <a class="code" href="bme280_8h.html#a75320daf0079b6e189bfa14a9a58ea3e">BME280_compensate_T_double</a>(<a class="code" href="type_8h.html#ab1967d8591af1a4e48c37fd2b0f184d0">int32_t</a> adc_T);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">double</span> <a class="code" href="bme280_8h.html#a45f4ba9c59912fa12c67e62659dd4e75">BME280_compensate_P_double</a>(<a class="code" href="type_8h.html#ab1967d8591af1a4e48c37fd2b0f184d0">int32_t</a> adc_P);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">double</span> <a class="code" href="bme280_8h.html#a65f0625e8ad6dc76df9efc563d80fb53">bme280_compensate_H_double</a>(<a class="code" href="type_8h.html#ab1967d8591af1a4e48c37fd2b0f184d0">int32_t</a> adc_H);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">void</span> <a class="code" href="bme280_8h.html#ab8af30e4c2a1de8cdeade2ad37e5833c">whoAmIBME280</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="bme280_8h.html#a7f057186f26d4ad77860365463bf0784">   20</a></span>&#160;<span class="preprocessor">#define BME280_W    (0xec) //0b11101100</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="bme280_8h.html#a9780a823e7984eb8c2d6bacac85a5fb2">   21</a></span>&#160;<span class="preprocessor">#define BME280_R    (0xed) //0b11101101</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="bme280_8h_html_ae2c42108ca0b31c706d0a9c2a3ee47db"><div class="ttname"><a href="bme280_8h.html#ae2c42108ca0b31c706d0a9c2a3ee47db">calib_humidity</a></div><div class="ttdeci">unsigned int calib_humidity(int h_rawdata)</div><div class="ttdef"><b>Definition:</b> bme280.c:302</div></div>
+<div class="ttc" id="type_8h_html_ab1967d8591af1a4e48c37fd2b0f184d0"><div class="ttname"><a href="type_8h.html#ab1967d8591af1a4e48c37fd2b0f184d0">int32_t</a></div><div class="ttdeci">signed int int32_t</div><div class="ttdef"><b>Definition:</b> type.h:23</div></div>
+<div class="ttc" id="bme280_8h_html_a45f4ba9c59912fa12c67e62659dd4e75"><div class="ttname"><a href="bme280_8h.html#a45f4ba9c59912fa12c67e62659dd4e75">BME280_compensate_P_double</a></div><div class="ttdeci">double BME280_compensate_P_double(int32_t adc_P)</div><div class="ttdef"><b>Definition:</b> bme280.c:265</div></div>
+<div class="ttc" id="bme280_8h_html_a4270c349bb9868b70c6a46c8d5c0bc49"><div class="ttname"><a href="bme280_8h.html#a4270c349bb9868b70c6a46c8d5c0bc49">get_rawdata</a></div><div class="ttdeci">void get_rawdata(int *_t_data, int *_p_data, int *_h_data)</div><div class="ttdef"><b>Definition:</b> bme280.c:93</div></div>
+<div class="ttc" id="bme280_8h_html_af752df8e5eb19ac83f8e631cbf6c8841"><div class="ttname"><a href="bme280_8h.html#af752df8e5eb19ac83f8e631cbf6c8841">get_trimdata</a></div><div class="ttdeci">void get_trimdata(void)</div><div class="ttdef"><b>Definition:</b> bme280.c:121</div></div>
+<div class="ttc" id="bme280_8h_html_aab2d0c7ae27504fd3abdca793bc20307"><div class="ttname"><a href="bme280_8h.html#aab2d0c7ae27504fd3abdca793bc20307">bme280_init</a></div><div class="ttdeci">void bme280_init(void)</div><div class="ttdef"><b>Definition:</b> bme280.c:49</div></div>
+<div class="ttc" id="bme280_8h_html_a65f0625e8ad6dc76df9efc563d80fb53"><div class="ttname"><a href="bme280_8h.html#a65f0625e8ad6dc76df9efc563d80fb53">bme280_compensate_H_double</a></div><div class="ttdeci">double bme280_compensate_H_double(int32_t adc_H)</div><div class="ttdef"><b>Definition:</b> bme280.c:286</div></div>
+<div class="ttc" id="bme280_8h_html_ab8af30e4c2a1de8cdeade2ad37e5833c"><div class="ttname"><a href="bme280_8h.html#ab8af30e4c2a1de8cdeade2ad37e5833c">whoAmIBME280</a></div><div class="ttdeci">void whoAmIBME280(void)</div><div class="ttdef"><b>Definition:</b> bme280.c:319</div></div>
+<div class="ttc" id="bme280_8h_html_a82b60d36d084997fcff3aba83c5bb46f"><div class="ttname"><a href="bme280_8h.html#a82b60d36d084997fcff3aba83c5bb46f">calib_pressure</a></div><div class="ttdeci">uint32_t calib_pressure(int32_t _p_rawdata)</div></div>
+<div class="ttc" id="bme280_8h_html_ae9e3b7c05fc671e59a5442e0695bc7ad"><div class="ttname"><a href="bme280_8h.html#ae9e3b7c05fc671e59a5442e0695bc7ad">calib_temparture</a></div><div class="ttdeci">int32_t calib_temparture(int32_t _t_rawdata)</div><div class="ttdef"><b>Definition:</b> bme280.c:214</div></div>
+<div class="ttc" id="bme280_8h_html_a75320daf0079b6e189bfa14a9a58ea3e"><div class="ttname"><a href="bme280_8h.html#a75320daf0079b6e189bfa14a9a58ea3e">BME280_compensate_T_double</a></div><div class="ttdeci">double BME280_compensate_T_double(int32_t adc_T)</div><div class="ttdef"><b>Definition:</b> bme280.c:253</div></div>
+<div class="ttc" id="type_8h_html"><div class="ttname"><a href="type_8h.html">type.h</a></div></div>
+<div class="ttc" id="type_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="type_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition:</b> type.h:29</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_a5be7bbed3ff2f129951759fe96bf5d5.html">workspace</a></li><li class="navelem"><a class="el" href="dir_e849b43f2720135ff09dee0ba18ac893.html">RT-USB-THP-sample</a></li><li class="navelem"><a class="el" href="dir_72377fe9ae457cbc391d9d9144e7a2ca.html">inc</a></li><li class="navelem"><a class="el" href="dir_aa6d1c719c1abe255471b1c9e14efc6e.html">MAIN</a></li><li class="navelem"><a class="el" href="bme280_8h.html">bme280.h</a></li>
+    <li class="footer">構築:
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

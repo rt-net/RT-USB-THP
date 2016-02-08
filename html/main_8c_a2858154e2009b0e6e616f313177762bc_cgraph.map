@@ -1,0 +1,19 @@
+<map id="init" name="init">
+<area shape="rect" id="node2" href="$io_8h.html#ac3c73735519c0fbd83b55f44c3536b96" title="initIO" alt="" coords="125,5,177,32"/>
+<area shape="rect" id="node3" href="$_user_interface_8h.html#a0ca6846e1e6a9a35688a5d07c9564ba5" title="turnLED" alt="" coords="116,56,185,83"/>
+<area shape="rect" id="node4" href="$_system_tick_timer_8h.html#a18af7476504a76def67727301e3968fb" title="wait1msec" alt="" coords="109,107,193,133"/>
+<area shape="rect" id="node5" href="$usbhw_8h.html#a36bb0f21ba89a918181d3a837a319129" title="USBIOClkConfig" alt="" coords="92,157,209,184"/>
+<area shape="rect" id="node6" href="$timer_8h.html#a671f0649ffc60f98caf701551de8a18b" title="initTimer32_0" alt="" coords="101,208,200,235"/>
+<area shape="rect" id="node7" href="$timer_8h.html#a37e0ba7719329a1a2dc569c95c1b0d85" title="initTimer32_1" alt="" coords="101,259,200,285"/>
+<area shape="rect" id="node8" href="$usbhw_8h.html#a35fe971cbcbfe8813199e869284cb862" title="USB_Init" alt="" coords="114,309,187,336"/>
+<area shape="rect" id="node13" href="$uart_8h.html#ae64bef5f9fbb35532c224933a52aec5c" title="UARTInit" alt="" coords="114,360,187,387"/>
+<area shape="rect" id="node14" href="$i2c_8h.html#a279d004d45293dff5260643be80c1319" title="I2CInit" alt="" coords="121,411,180,437"/>
+<area shape="rect" id="node15" href="$_user_interface_8h.html#a0e6a38adb3139816ca5ead4dfc842caa" title="initUI" alt="" coords="125,461,176,488"/>
+<area shape="rect" id="node17" href="$_main_function_8h.html#ab862d3a92cd2b1082621b95d79718777" title="initMainFunction" alt="" coords="92,512,209,539"/>
+<area shape="rect" id="node9" href="$usbhw_8c.html#abfc0896707a9437a0c3b0ac611da59aa" title="USB_Reset" alt="" coords="274,284,365,311"/>
+<area shape="rect" id="node10" href="$usbhw_8c.html#ae0b5ab428469821dab3912e9a9540f38" title="USB_SetAddress" alt="" coords="257,335,381,361"/>
+<area shape="rect" id="node11" href="$usbhw_8c.html#ae88115ba5c676e7d806a8062f981525a" title="WrCmdDat" alt="" coords="429,335,516,361"/>
+<area shape="rect" id="node12" href="$usbhw_8c.html#a43a57d8b8cb335d6c95b8517a46c244f" title="WrCmd" alt="" coords="564,335,631,361"/>
+<area shape="rect" id="node16" href="$timer_8h.html#aa4de0ba8837a863b85d9cc26491d3a48" title="startTimer32_0" alt="" coords="265,461,373,488"/>
+<area shape="rect" id="node18" href="$timer_8h.html#a824037b66943b82834b0a5b889727bec" title="startTimer32_1" alt="" coords="265,512,373,539"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="CDC_GetSerialState" name="CDC_GetSerialState">
+<area shape="rect" id="node2" href="$usb_transmission_8c.html#a4a2bacd9a23fff588cb7f5b6538e7b25" title="VCOM_CheckState" alt="" coords="195,31,331,57"/>
+<area shape="rect" id="node6" href="$usbuser_8c.html#a910d243e4f1701b825b7e9c6e7fa2bed" title="USB_EndPoint1" alt="" coords="205,81,321,108"/>
+<area shape="rect" id="node3" href="$debug_8c.html#a1bd9f450dbe5f0e704bee6a2d945822f" title="myPrintfUSB" alt="" coords="379,31,476,57"/>
+<area shape="rect" id="node4" href="$bme280_8c.html#a62fe1672d6460d5a69a1b367f05776fa" title="whoAmIBME280" alt="" coords="546,5,665,32"/>
+<area shape="rect" id="node5" href="$_main_function_8c.html#a722d97fdabdf6a349b0ad02c82da1d23" title="TIMER32_1_IRQHandler" alt="" coords="524,56,687,83"/>
+</map>
